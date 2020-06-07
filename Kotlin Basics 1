@@ -1,0 +1,57 @@
+import java.util.*
+
+fun main(args:Array<String>) {
+    val scanner = Scanner(System.`in`)
+    // Scanner imports the ability for the user to input any data when prompted
+    var x = 8811
+    println(x)
+    
+    var name = "JOHN"
+    println("name: " + name)
+    print("Enter age: ")
+   
+    var age: Int = readLine()!!.toInt()
+    println("age is : " + age)
+    // readline() is used to give user the ability to input data
+    // !! is here to cancel the string operation of readLine and convert it to int.
+    
+    
+    print("Enter Name: ")
+    var givename = readLine()
+    println("given NAME : " + givename)
+    
+    print("Enter Number: ")
+    var givenNumber: Int = scanner.nextInt()
+    println("given NUMBER : " + givenNumber)
+    
+    var dep: String
+    dep = "Software Engineering"
+    println("department: " + dep)
+    
+    val word: String = "Pokemon"
+    //val cannot be changed after assigned. It is read only
+    var word2: String = "Pokemon"
+    word2 = "Pokemonwow"
+    //variables or var can be changed after assigned
+    println(word)
+    println(word2)
+
+    var pi: Double = 3.4
+    
+    print("wowperson \n")
+    // \n is the substitute of println which creates a new line
+   
+  
+   
+
+    //Null Safety
+    var student: String?
+    // here "?" lets the program know that the variable can have a null. Doesn't mean it has to be a null, it can have a value. But without "?" it won't run and give error if the variable is actually null.
+    student = null
+    // setting student as null means it doesn't have any value
+    println("student")
+    // here it will print student even if it's null because "!!" is not given
+    println(student!!)
+    // the ""!!" after student indicates if student is null, it won't run. Program will give an exception or error. The student has been set null here. The code won't run further unless it's changed to a String value.
+
+}
